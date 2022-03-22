@@ -1,20 +1,26 @@
 {
-  "name": "fashionExtension",
+  "name": "arrowHeadCursorExtension",
   "version": "1.0.0",
   "manifest_version": 2,
   "web_accessible_resources": [
-    "img/face.png"
+    "img/cursor1.png",
+    "img/cursor2.png",
+    "img/cursor3.png",
+    "img/cursor4.png",
+    "img/cursor5.png",
+    "img/cursor6.png",
+    "img/cursor7.png"
   ],
   "icons": {
     "16": "img/icon16.png",
     "48": "img/icon48.png",
     "128": "img/icon128.png"
   },
-  "description": "ZOZOTOWNの商品詳細ページの画像の上に自分の顔を載せることで、試着をせずとも自分に似合う服がわかるようになるChrome拡張",
+  "description": "カーソルを新石器時代の石鏃にするChrome拡張",
   "content_scripts": [{
-    "matches": ["https://zozo.jp/shop/*"],
-    "css":[
-      "style.css"
+    "matches": [
+      "https://*/*",
+      "http://*/*"
     ],
     "js": [
       "content.js"
