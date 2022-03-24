@@ -22,14 +22,3 @@ var randomNumber = Math.floor( Math.random() * (max + 1 - min) ) + min ;
 
 // カーソルの画像を指定
 bodyElem[0].style.cursor = 'url('+img[randomNumber]+'), auto'
-
-
-//ドキュメントスタイルの取得
-var sheets = document.styleSheets
-var sheet = sheets[sheets.length - 1];
-
-//スタイルルールの追加
-sheet.insertRule(
-  '.body::hover { cursor: url('+img[randomNumber]+'), auto }',
-  sheet.cssRules.length
-);
