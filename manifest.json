@@ -1,15 +1,22 @@
 {
   "name": "arrowHeadCursorExtension",
   "version": "1.0.0",
-  "manifest_version": 2,
-  "web_accessible_resources": [
-    "img/cursor1.png",
-    "img/cursor2.png",
-    "img/cursor3.png",
-    "img/cursor4.png",
-    "img/cursor5.png",
-    "img/cursor6.png",
-    "img/cursor7.png"
+  "manifest_version": 3,
+  "web_accessible_resources": [{
+    "resources": [
+      "img/cursor1.png",
+      "img/cursor2.png",
+      "img/cursor3.png",
+      "img/cursor4.png",
+      "img/cursor5.png",
+      "img/cursor6.png",
+      "img/cursor7.png"
+    ],
+    "matches": [
+      "https://*/*",
+      "http://*/*"
+    ]
+  }
   ],
   "icons": {
     "16": "img/icon16.png",
